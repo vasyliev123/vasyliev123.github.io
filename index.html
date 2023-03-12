@@ -8,25 +8,37 @@
     <title>DMytro Vasyliev</title>
 </head>
 <body class="body">
-<!--     <div class="navbar">
-        <div class="logo">
-            <a href="index.html">
-                <img src="static/imgs/logo.png" alt="logo">
-            </a>
+    
+    <div class="container">
+        <div id="bar-container">
+            <div id="bar"></div>
+            <div id="bar"></div>
         </div>
-        <div>
-            <ul class="nav-links">
-                <input type="checkbox" id="checkbox_togle">
-                <label for="checkbox_togle" class="hamburger">&#9776;</label>
-                    <div class="menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </div>
-                </ul>    
-        </div>  
-    </div> -->
-    <iframe src="https://chromedino.com/" frameborder="0" scrolling="no" width="100%" height="100%" loading="lazy"></iframe>
-<style type="text/css">iframe { position: absolute; width: 100%; height: 100%; z-index: 999; }</style> 
+        <div class="controls">
+        <div class="buttons">
+            <button class="btn" id="sort">Sort</button>
+            <button class="btn" id="shuffle">Shuffle</button>
+            <!-- <button class="btn" id="reset">Reset</button> -->
+             
+        </div>
+        <div class="styled-select">
+            <select id="choice">
+                <option value="selection">Selection Sort</option>
+              <option value="bubble">Bubble Sort</option>
+              <option value="insertion">Insertion Sort</option>
+              <option value="merge">Merge Sort</option>
+                <option value="quick">Quick Sort</option>
+                <option value="heap">Heap Sort</option>
+            </select>
+          </div>
+          
+        <div class="range-slider-container">
+            <label class="styled-text" for="range-slider">Speed</label>
+            <input id="speed" type="range" class="range-slider" min="0" max="100" value="50" step="10">
+          </div>
+    </div>
+</div>
+    <script src="visualize.js"></script>
+    <script src="slider.js"></script>
 </body>
 </html>
