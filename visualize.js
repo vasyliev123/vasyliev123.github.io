@@ -9,7 +9,7 @@ let states = [];
 init();
 function init() {
 
-    for (let i = 0; i < 600; i++) {
+    for (let i = 0; i < 60; i++) {
         arr.push(Math.floor(Math.random() * 100)+1);
         states.push(-1);
     }
